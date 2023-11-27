@@ -17,3 +17,4 @@ $values = array_values($data);
 foreach ($data as $key => $value) {
     print_r ($value);
 }
+array_merge()
