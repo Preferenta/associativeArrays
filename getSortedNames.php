@@ -23,3 +23,25 @@ $users = [
 ];
  
 getSortedNames($users);
+
+function getSortedBirthday(array $users)
+{
+$sortedBirthday = [];
+foreach ($users as ['birthday' => $birthday]) {
+    $sortedBirthday[] = $birthday;
+}
+sort($sortedBirthday);
+print_r ($sortedBirthday);
+}
+getSortedBirthday($users);
+
+function getSortedGender(array $users) 
+{
+    $genders = [];
+    foreach ($users as ['gender' => $gender]) {
+        $genders[] = $gender;
+    }
+    sort($genders);
+    return $genders;
+}
+getSortedGender($users);
